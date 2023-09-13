@@ -20,10 +20,13 @@ const lightTheme = StyleSheet.create({
     },
     header:{
       fontSize: 50,
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      color: '#8b3636ed',
+      alignItems: 'center'
     },
     text:{
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      color: '#8b3636ed',
     }
   });
 
@@ -45,10 +48,13 @@ const darkTheme = StyleSheet.create({
     },
     header:{
       fontSize: 50,
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      color: '#ed9d9de5',
+      alignItems: 'center'
     },
     text:{
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      color: '#ed9d9de5',
     }
   });
 
