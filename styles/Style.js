@@ -5,7 +5,7 @@ import Constants from "expo-constants";
 const lightTheme = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#ed9d9d',
+      backgroundColor: '#ed9d9de5',
       alignItems: 'center',
       marginTop: Constants.statusBarHeight+10,
     },
@@ -30,7 +30,7 @@ const lightTheme = StyleSheet.create({
 const darkTheme = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#7e2424',
+      backgroundColor: '#8b3636ed',
       alignItems: 'center',
       marginTop: Constants.statusBarHeight+10,
     },
