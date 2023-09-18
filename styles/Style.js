@@ -35,6 +35,16 @@ const lightTheme = StyleSheet.create({
       textAlign: 'left',
       padding: 10
     },
+    textInput:{
+      backgroundColor: '#8b3636ed',
+      margin: 12,
+      borderRadius: 5,
+      borderColor: '#853636c1',
+      borderWidth: 2,
+      padding: 5,
+      color: '#ed9d9de5',
+      fontFamily: 'sans-serif-thin'
+    }
   });
 
 const darkTheme = StyleSheet.create({
