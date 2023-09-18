@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import Constants from "expo-constants";
+import NumericInput from 'react-native-numeric-input';
 
 
 const lightTheme = StyleSheet.create({
@@ -44,7 +45,10 @@ const lightTheme = StyleSheet.create({
       padding: 5,
       color: '#ed9d9de5',
       fontFamily: 'sans-serif-thin'
-    }
+    },
+    bottleInput:{
+      borderColor: '#8b3636ed'
+    },
   });
 
 const darkTheme = StyleSheet.create({

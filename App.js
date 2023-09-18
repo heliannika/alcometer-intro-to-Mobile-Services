@@ -28,16 +28,18 @@ export default function App() {
       </View>
       <View>
         <Text style={currentTheme.subheader}>Weight</Text>
-        <TextInput 
-          style={currentTheme.textInput}
+        <TextInput
+          style={currentTheme.textInput} 
+         /*
           keyboardType='number-pad'
           value={weight}
-          onChangeText={setWeight}
+          onChangeText={setWeight} */
         />
       </View>
       <View>
         <Text style={currentTheme.subheader}>Bottles</Text>
         <NumericInput
+          style={currentTheme.bottleInput}
           minValue={0}
           value={bottles}
           onChange={setBottles}
