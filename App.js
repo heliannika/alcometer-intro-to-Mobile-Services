@@ -6,8 +6,12 @@ import { useState } from 'react';
 export default function App() {
 
   const [theme, setTheme] = useState(false);
+  const [weight, setWeight] = useState(0);
+
 
   const currentTheme = theme ? lightTheme : darkTheme;
+
+  console.log(weight);
 
   return (
     <ScrollView style={currentTheme.container}>
@@ -23,7 +27,12 @@ export default function App() {
       </View>
       <View>
         <Text style={currentTheme.subheader}>Weight</Text>
-        <TextInput style={currentTheme.textInput}></TextInput>
+        <TextInput 
+          style={currentTheme.textInput}
+          keyboardType='number-pad'
+          value={weight}
+          onChangeText={setWeight}
+        />
       </View>
     </ScrollView>
   );
