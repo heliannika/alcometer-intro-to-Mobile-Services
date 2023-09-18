@@ -70,6 +70,16 @@ const darkTheme = StyleSheet.create({
       textAlign: 'left',
       padding: 10
     },
+    textInput:{
+      backgroundColor: '#ed9d9de5',
+      margin: 12,
+      borderRadius: 5,
+      borderColor: '#853636c1',
+      borderWidth: 2,
+      padding: 5,
+      color: '#8b3636ed',
+      fontFamily: 'sans-serif-thin'
+    }
   });
 
   export {lightTheme, darkTheme};

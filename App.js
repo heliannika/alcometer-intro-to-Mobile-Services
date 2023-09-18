@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, Switch, Text, TextInput, View } from 'react-native';
 import Styles, { lightTheme, darkTheme } from './styles/Style';
 import { useState } from 'react';
-import { Header } from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
 
@@ -24,7 +23,7 @@ export default function App() {
       </View>
       <View>
         <Text style={currentTheme.subheader}>Weight</Text>
-        <TextInput></TextInput>
+        <TextInput style={currentTheme.textInput}></TextInput>
       </View>
     </ScrollView>
   );
