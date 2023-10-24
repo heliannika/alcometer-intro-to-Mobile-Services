@@ -75,11 +75,15 @@ const lightTheme = StyleSheet.create({
       padding: 5,
       backgroundColor: '#8b3636ed',
       marginTop: 15,
-      height: 30
+      height: 40,
+      width: 100,
+      alignItems: 'center'
     },
     calcButtonText:{
       color: '#ed9d9de5',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      fontSize: 20,
+      paddingTop: 3,
     }
   });
 
@@ -156,11 +160,15 @@ const darkTheme = StyleSheet.create({
       padding: 5,
       backgroundColor: '#ed9d9de5',
       marginTop: 15,
-      height: 30
+      height: 40,
+      width: 100,
+      alignItems: 'center'
     },
     calcButtonText:{
       color: '#853636c1',
       fontWeight: 'bold',
+      fontSize: 20,
+      paddingTop: 3,
     }
   });
 
