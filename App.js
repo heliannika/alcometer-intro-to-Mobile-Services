@@ -14,7 +14,7 @@ export default function App() {
   const [BAClevel, setBAClevel] = useState(0);
   // const [BAClevelMessage, setBAClevelMessage] = useState('');
   const [message, setMessage] = useState('');
-  const [resultColor, setResultColor] = useState('');
+  const [resultColor, setResultColor] = useState(false);
 
   const genders = ['female', 'male'];
 
@@ -125,7 +125,7 @@ export default function App() {
       <Text>{message}</Text>
       <View>
         <Text>BAC level is: </Text>
-        <Text style={[{color: resultColor}]}>{BAClevel.toFixed(2)}</Text>
+        <Text style={{color: resultColor}}>{BAClevel.toFixed(2)}</Text>
       </View>
       <Pressable
         onPress={() => calculate()}>
