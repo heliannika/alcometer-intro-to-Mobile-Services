@@ -50,8 +50,37 @@ const lightTheme = StyleSheet.create({
       alignItems: 'center',
     },
     radioButtons:{
-      justifyContent: 'space-around',
+      flexDirection: 'row',
     },
+    radioButtonText:{
+      color: '#8b3636ed',
+      marginTop: 10,
+      fontFamily: 'sans-serif-thin',
+      fontSize: 20,
+    },
+    radioButtonView:{
+      alignItems: 'center',
+      padding: 20,
+    },
+    calculateView:{
+      alignItems: 'center',
+    },
+    baclevel:{
+      fontSize: 30,
+      fontFamily: 'sans-serif-thin',
+      fontWeight: 'bold',
+      backgroundColor: '#df7272ff',
+    },
+    calcButton:{
+      padding: 5,
+      backgroundColor: '#8b3636ed',
+      marginTop: 15,
+      height: 30
+    },
+    calcButtonText:{
+      color: '#ed9d9de5',
+      fontWeight: 'bold'
+    }
   });
 
 const darkTheme = StyleSheet.create({
@@ -103,11 +132,35 @@ const darkTheme = StyleSheet.create({
     },
     radioButtons:{
       flexDirection: 'row',
-      alignItems: 'center',
-      color: '#ed9d9de5'
     },
-    result:{
-      
+    radioButtonText:{
+      color: '#ed9d9de5',
+      marginTop: 10,
+      fontFamily: 'sans-serif-thin',
+      fontSize: 20,
+    },
+    radioButtonView:{
+      alignItems: 'center',
+      padding: 20,
+    },
+    calculateView:{
+      alignItems: 'center',
+    },
+    baclevel:{
+      fontSize: 30,
+      fontFamily: 'sans-serif-thin',
+      fontWeight: 'bold',
+      backgroundColor: '#df7272ff',
+    },
+    calcButton:{
+      padding: 5,
+      backgroundColor: '#ed9d9de5',
+      marginTop: 15,
+      height: 30
+    },
+    calcButtonText:{
+      color: '#853636c1',
+      fontWeight: 'bold',
     }
   });
 

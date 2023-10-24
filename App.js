@@ -57,10 +57,10 @@ export default function App() {
         setResultColor('red');
       }
 
-      // Message given if the BAC level is below zero.
+      // Message given if the BAC level is below zero and result doesn't give negative outputs.
 
       if (result < 0) {
-        setMessage('BAC level cannot be negative'),
+        alert('BAC level cannot be negative'),
         result = 0;
       }
 
@@ -112,26 +112,27 @@ export default function App() {
           />
         </View>
       </View>
-      <View>
-        <RadioButton.Group value={gender} onValueChange={g => setGender(g)}>
+      <View style={currentTheme.radioButtonView}>
+        <RadioButton.Group
+        value={gender} onValueChange={g => setGender(g)}>
           {genders.map (g =>
-            <View key={g} 
+            <View key={g}
             style={currentTheme.radioButtons}>
               <RadioButton value={g} />
-              <Text>{g}</Text>
+              <Text style={currentTheme.radioButtonText}>{g}</Text>
             </View>
             )}
         </RadioButton.Group>
       </View>
-      <Text>{message}</Text>
-      <View>
-        <Text>BAC level is: </Text>
-        <Text style={{color: resultColor}}>{BAClevel.toFixed(2)}</Text>
+      <View style={currentTheme.calculateView}>
+        <Text style={currentTheme.subheader}>BAC level is: </Text>
+        <Text style={[{color: resultColor}, currentTheme.baclevel]}>{BAClevel.toFixed(2)}</Text>
+        <Pressable
+          onPress={() => calculate()}
+          style={currentTheme.calcButton}>
+          <Text style={currentTheme.calcButtonText}>Calculate</Text>
+        </Pressable>
       </View>
-      <Pressable
-        onPress={() => calculate()}>
-        <Text>Calculate</Text>
-      </Pressable>
     </ScrollView>
   );
 }
