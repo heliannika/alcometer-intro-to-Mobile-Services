@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import Constants from "expo-constants";
-import NumericInput from 'react-native-numeric-input';
 
 
 const lightTheme = StyleSheet.create({
@@ -8,22 +7,22 @@ const lightTheme = StyleSheet.create({
       flex: 1,
       backgroundColor: '#ed9d9de5',
       marginTop: Constants.statusBarHeight+10,
+      padding: 20
     },
     switchRow:{
       flexDirection: 'row',
       alignItems: 'center',
-      padding: 5,
-      alignSelf: "flex-end"
+      alignSelf: 'flex-end'
     },
     switch:{
-      alignSelf:"flex-start",
+      alignSelf: 'flex-start',
     },
     header:{
       fontSize: 50,
       fontFamily: 'sans-serif-thin',
       color: '#8b3636ed',
       textAlign: 'center',
-      padding: 10
+      padding: 5
     },
     text:{
       fontFamily: 'sans-serif-thin',
@@ -34,20 +33,24 @@ const lightTheme = StyleSheet.create({
       color: '#8b3636ed',
       fontSize: 25,
       textAlign: 'left',
-      padding: 10
+      marginTop: 10,
+      marginBottom: 10
     },
     textInput:{
       backgroundColor: '#8b3636ed',
-      margin: 12,
       borderRadius: 5,
       borderColor: '#853636c1',
       borderWidth: 2,
-      padding: 5,
       color: '#ed9d9de5',
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      marginBottom: 10,
+      paddingLeft: 5
     },
-    bottleInput:{
-      borderColor: '#8b3636ed'
+    numInputView:{
+      alignItems: 'center',
+    },
+    radioButtons:{
+      justifyContent: 'space-around',
     },
   });
 
@@ -56,11 +59,11 @@ const darkTheme = StyleSheet.create({
       flex: 1,
       backgroundColor: '#8b3636ed',
       marginTop: Constants.statusBarHeight+10,
+      padding: 20
     },
     switchRow:{
       flexDirection: 'row',
       alignItems: 'center',
-      padding: 5,
       alignSelf: "flex-end"
     },
     switch:{
@@ -71,7 +74,7 @@ const darkTheme = StyleSheet.create({
       fontFamily: 'sans-serif-thin',
       color: '#ed9d9de5',
       textAlign: 'center',
-      padding: 10
+      padding: 5
     },
     text:{
       fontFamily: 'sans-serif-thin',
@@ -82,17 +85,29 @@ const darkTheme = StyleSheet.create({
       color: '#ed9d9de5',
       fontSize: 25,
       textAlign: 'left',
-      padding: 10
+      marginTop: 10,
+      marginBottom: 10
     },
     textInput:{
       backgroundColor: '#ed9d9de5',
-      margin: 12,
       borderRadius: 5,
       borderColor: '#853636c1',
       borderWidth: 2,
-      padding: 5,
       color: '#8b3636ed',
-      fontFamily: 'sans-serif-thin'
+      fontFamily: 'sans-serif-thin',
+      marginBottom: 10,
+      paddingLeft: 5
+    },
+    numInputView:{
+      alignItems: 'center',
+    },
+    radioButtons:{
+      flexDirection: 'row',
+      alignItems: 'center',
+      color: '#ed9d9de5'
+    },
+    result:{
+      
     }
   });
 
