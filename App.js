@@ -60,7 +60,8 @@ export default function App() {
       // Message given if the BAC level is below zero.
 
       if (result < 0) {
-        setMessage('BAC level cannot be negative');
+        setMessage('BAC level cannot be negative'),
+        result = 0;
       }
 
       setBAClevel(result);
